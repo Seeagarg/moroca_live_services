@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Jost:wght@500&family=Oswald:wght@300;400&family=Poppins:wght@200;300;400&family=Saira+Semi+Condensed:wght@600&display=swap');
+
+
+.slider-main img {
+    height: 500px !important;
+}
+
+.text-font {
+    font-family: 'Jost', sans-serif;
+}
+
+.background-image {
+    background-image: linear-gradient(to right, #277CB7 60%, #E8F2F9);
+}
+
+
+.raceday-gradient {
+    background: linear-gradient(90deg, #F96E6E 60%, white);
+}
+
+/* Add this CSS to your stylesheet or inline styles */
+.slick-next {
+    /* right: 14px !important;
+    z-index: 99; */
+    display: none !important;
+
+}
+
+.slick-prev {
+    /* left: 14px !important;
+    z-index: 99; */
+    display: none !important;
+}
+
+.player {
+
+    width: 59%;
+    height: 100%;
+
+}
+
+.scrollable-content {
+    height: 550px;
+    /* Adjust the height as per your requirements */
+    overflow-y: auto;
+}
+
+
+.image-hover-effect {
+    transition: transform 0.4s ease; /* smooth transition */
+    overflow: hidden;
+  }
+  
+  .image-hover-effect:hover {
+    transform: scale(1.1); /* enlarge by 10% on hover */
+  }
+  

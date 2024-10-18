@@ -1,0 +1,86 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Oswald:wght@300;400&family=Poppins:wght@200;300;400&family=Saira+Semi+Condensed:wght@600&display=swap');
+
+
+ /* styles.css (or your preferred CSS file) */
+/* body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  } */
+
+  /* Add this to your CSS file */
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 100;
+}
+
+ .font-family{
+     font-family: 'Oswald', sans-serif;
+ }
+ .dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position the menu below the "Categories" link */
+  left: 0; /* Adjust as needed for horizontal positioning */
+  right: 0; /* Adjust as needed for horizontal positioning */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the menu is above other elements */
+}
+
+.dropdown-container {
+  position: relative; /* Ensure the parent container is a reference for absolute positioning */
+}
+
+.dropdownMenu {
+  z-index: 1000;
+}
+
+.absolute {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the parent */
+  right: 0; /* Adjust as needed for your design */
+  z-index: 1; /* Ensure the dropdown is above other elements */
+}
+
+/* CSS (Meme.css or your CSS file) */
+
+.meme-container {
+  position: relative;
+  overflow: hidden; /* Hide overflow to clip the blurred image */
+}
+
+.meme-image {
+  max-width: 100%;
+  height: auto;
+  transition: filter 0.3s;
+}
+
+.button-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-button {
+  background-color: white;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+/* .meme-container:hover .meme-image {
+  filter: blur(2px); 
+}  */
+
+.meme-container:hover .button-container {
+  opacity: 1;
+}

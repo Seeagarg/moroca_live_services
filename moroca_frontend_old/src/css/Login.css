@@ -1,0 +1,58 @@
+
+.login-container {
+    background-image: url('../assets/mcposter.png'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fixed background position */
+    min-height: 100vh; /* Minimum height to cover the whole screen */
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    opacity: 0.9; /* Adjust the opacity as needed */
+    /* margin-left: 5px; Remove the quotes around the value */
+    padding: 20px; /* Add padding to the container */
+    /* align-items: center; Center the content horizontally */
+    justify-content: center; 
+  }
+  .login-containerr {
+    /* background-image: linear-gradient(to right, gray , white); */
+    /* background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  */
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    opacity: 0.9; /* Adjust the opacity as needed */
+    /* margin-left: 5px; Remove the quotes around the value */
+    /* padding: 20px; */
+    /* align-items: center; Center the content horizontally */
+    justify-content: center; 
+  }
+  
+  .card{
+    margin-top: 4%;
+  }
+ 
+  .font-family{
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .image-stack {
+    position: relative;
+    width: 300px; 
+    height: 200px; 
+    overflow: hidden;
+  }
+  
+  .image-stack img {
+    position: absolute;
+    top: 10px; /* Adds slight offset to give a stacked look */
+    left: 10px; /* Adds slight offset to give a stacked look */
+    width: calc(100% - 20px); /* Reducing width for the left offset */
+    height: calc(100% - 20px); /* Reducing height for the top offset */
+    object-fit: cover;
+    transition: transform 0.3s; /* Animation for swiping */
+  }
+  
+  

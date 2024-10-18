@@ -1,0 +1,228 @@
+  .cardContainer {
+    position: relative;
+    width: 70vw; 
+  max-width: 370px; 
+    height: 550px;
+
+    /* Increased to accommodate stacked cards */
+  }
+
+
+  .card {
+    position: relative;
+    /* text-align: center; */
+
+    font-family: 'Jost', sans-serif;
+    width: 100vw;
+    max-width: 350px;
+    height: 360px;
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    
+    z-index: 1;
+    
+  }
+  /* AppStyles.css */
+.gradient-bg {
+  position: relative;
+  background:linear-gradient(45deg, rgb(31 10 117 / 80%), transparent);
+  min-height: 15vh; /* This ensures that the gradient covers the full height of the viewport. */
+}
+
+
+  .family{
+    font-family: 'Jost', sans-serif;
+  }
+
+  .diski-family{
+    font-family: 'DM Sans', sans-serif;
+  }
+  .cardContent {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .swipe {
+    position: absolute;
+  }
+
+  .bottom-navbar-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+
+  .mobile-text {
+    display: none; /* Initially hide the text for all viewports */
+    position: absolute;
+    /* top: 50%; */
+    /* left: 35%; */
+    /* transform: translate(-50%, -50%);  */
+    /* font-size: 1.5em; */
+    z-index: 1; /* Make sure the text is above the other content */
+    color: white; /* Adjust text color as needed */
+}
+
+/* Media query targeting mobile views */
+@media (max-width: 768px) {
+    .mobile-text {
+        display: block;
+    }
+}
+
+
+  /* For larger screens (e.g. tablet and desktop) */
+  @media (min-width: 768px) {
+    .navbar {
+      position: static;
+      top: unset;
+      bottom: unset;
+    }
+  }
+
+  /* For mobile screens */
+  @media (max-width: 767px) {
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      /* This ensures that the navbar is always on top */
+    }
+  }
+
+
+
+  .icon-cross,
+  .icon-heart {
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 24px;
+    /* Adjust the font size as needed */
+  }
+
+  /* CSS for the pop-up animation */
+  .pop-up {
+    animation-name: popUp;
+    animation-duration: 0.5s;
+    /* Adjust the animation duration as needed */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  .grad {
+    background-color: #554596;
+    background-image: linear-gradient(to right, #554596, white);
+  }
+
+  @keyframes popUp {
+    0% {
+      transform: scale(0.8);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+/* Mobile view */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important; /* use !important to override other styles if necessary */
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+}
+
+
+
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .card {
+      background-position: top  ; 
+      width: 100vw;
+    max-width: 100% !important ;
+    margin-top: 0;
+    height:380px ;
+
+  }
+
+  .mxx-auto {
+      margin-top: 0 !important;
+    
+     
+  }
+  .cardContentt {
+    position: relative;
+}
+
+.cardContentt::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px; /* You can adjust the height based on your needs */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7  )); /* This adds a black gradient. Adjust the color as needed */
+    pointer-events: none; /* This ensures the overlay doesn't interfere with any clickable elements */
+}
+
+
+  
+  /* Ensure other containing elements have no padding/margin */
+ 
+}
+
+
+
+
+
+
+  @keyframes popup {
+    0% {
+      transform: scale(1, 1)
+    }
+
+    10% {
+      transform: scale(1.1, 1.1)
+    }
+
+    30% {
+      transform: scale(.9, .9)
+    }
+
+    50% {
+      transform: scale(1, 1)
+    }
+
+    57% {
+      transform: scale(1, 1)
+    }
+
+    64% {
+      transform: scale(1, 1)
+    }
+
+    100% {
+      transform: scale(1, 1)
+    }
+  }
+
+  
